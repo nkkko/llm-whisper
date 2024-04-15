@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-whisper"
+version = "0.1a0"
+description = "Use LLM with Whisper through OpenAI API"
+readme = "README.md"
+authors = [{name = "Nikola Balic"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm",
+    "prompt_toolkit>=3.0.43",
+    "pygments>=2.17.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/nkkko/llm-cmd"
+Changelog = "https://github.com/nkkko/llm-cmd/releases"
+Issues = "https://github.com/nkkko/llm-cmd/issues"
+CI = "https://github.com/nkkko/llm-cmd/actions"
+
+[project.entry-points.llm]
+whisper = "llm_whisper"
+
+[project.optional-dependencies]
+test = ["pytest"]
