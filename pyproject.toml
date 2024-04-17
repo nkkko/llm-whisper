@@ -1,7 +1,3 @@
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "llm-whisper"
 version = "0.1a0"
@@ -14,15 +10,15 @@ classifiers = [
 ]
 dependencies = [
     "llm",
-    "prompt_toolkit>=3.0.43",
-    "pygments>=2.17.2",
+    "pydub",
+    "openai",
 ]
 
 [project.urls]
-Homepage = "https://github.com/nkkko/llm-cmd"
-Changelog = "https://github.com/nkkko/llm-cmd/releases"
-Issues = "https://github.com/nkkko/llm-cmd/issues"
-CI = "https://github.com/nkkko/llm-cmd/actions"
+Homepage = "https://github.com/nkkko/llm-whisper"
+Changelog = "https://github.com/nkkko/llm-whisper/releases"
+Issues = "https://github.com/nkkko/llm-whisper/issues"
+CI = "https://github.com/nkkko/llm-whisper/actions"
 
 [project.entry-points.llm]
 whisper = "llm_whisper"
